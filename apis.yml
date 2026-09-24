@@ -1,23 +1,79 @@
 aid: allcloud
+
 name: Allcloud
-description: 'Allcloud is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://allcloud.io/wp-content/uploads/2019/08/AllCloud-Homepage-Image.png
+
+description: 'AllCloud provides AI‑enabled cloud managed services, optimization, security, and migration solutions for enterprise customers. It offers AI strategy, AI on AWS, Salesforce, and Anthropic, as well as cloud platforms, data management, and industry‑specific services for financial services, manufacturing, retail, and SaaS technology firms.'
+
 url: https://raw.githubusercontent.com/api-evangelist/allcloud/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
-- Company
-apis: []
+- Managed Services
+- Cloud Platforms
+- AI Solutions
+- Security
+- Financial Services
+- Manufacturing
+- Retail
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/allcloud-llms.txt
+- type: Hosts
+  url: hosts/allcloud-hosts.yml
+- type: Vendors
+  url: vendors/allcloud-vendors.yml
+- type: Security
+  url: https://allcloud.io/security/
+- type: PrivacyPolicy
+  url: https://allcloud.io/privacy-policy/
+- type: Leadership
+  url: https://allcloud.io/about-us/leadership/
+- type: GettingStarted
+  url: https://allcloud.io/services/data-practice/getting-started/
+- type: Blog
+  url: https://allcloud.io/blog/
+- type: VulnerabilityDisclosure
+  url: security/allcloud-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/allcloud-domain-security.yml
 - type: Website
-  url: https://www.hiive.com/securities/allcloud-stock
+  url: https://allcloud.io
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: OpenAPI spec endpoint returned 401 and no other machine-readable contract was found.
+  evidence:
+    - url: https://engage.allcloud.io/openapi.json
+      status: 401
+  checked: 2026-09-24
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
