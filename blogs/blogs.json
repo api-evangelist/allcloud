@@ -9,6 +9,13 @@
       "method": "discovered"
     },
     {
+      "source": "https://allcloud.io/blog/feed/",
+      "feed_url": "https://allcloud.io/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://allcloud.io/feed/",
       "feed_url": "https://allcloud.io/feed/",
       "title": "",
@@ -16,6 +23,6 @@
       "method": "feed"
     }
   ],
-  "post_count": 11,
-  "fetched": "2026-10-10T13:15:00Z"
+  "post_count": 13,
+  "fetched": "2026-10-17T14:53:57Z"
 }
